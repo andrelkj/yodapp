@@ -1,7 +1,7 @@
 # Notes
 Automation testing with Robot Framework
 
-Robot is a automation testing tool
+Robot is a automation testing tool used to reduce manual repetitive testing.
 
 ---
 ## Structure
