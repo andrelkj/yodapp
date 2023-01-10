@@ -8,6 +8,7 @@ Test Teardown    End Session
 
 *** Test Cases ***
 Should register a new character
+    [Tags]    happy
 
 # Given that the resistration form was acessed
     # Selecting the button to move to the register page
@@ -54,6 +55,7 @@ Should register a new character
     # Sleep    5  
 
 Invalid Email
+    [Tags]    inv_email
 
 # Given that the resistration form was acessed
     # Selecting the button to move to the register page

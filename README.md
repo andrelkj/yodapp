@@ -165,6 +165,22 @@ Test Teardown   End Session
 
 These keywords can be reused by putting it inside a new file that will contain only those global functions (in this case the file _base.robot_)
 
+
+---
+## Tags
+Tags are used in order to run specific tagged test cases by calling its defined tag. For example:
+```
+*** Test Cases ***
+Should register a new character
+    [Tags]    happy
+```
+
+```
+Invalid Email
+    [Tags]    inv_email
+```
+
+The usage of tags is very important and useful for critical cases, smoke testing and regression. You can tag the critical test cases and then run these most important cases all together first.
 ---
 ## base.robot
 
@@ -333,6 +349,8 @@ This is a better option because it's format uses more properties, making the ele
 ## Terminal commands
 
 * **_robot -d ./logs online.robot_** - will tell robot to run the described file and them save the retuned outputs inside a new directory, in this case named logs (./ is used to create the directory inside the actual directory - Yodapp)
+* **_robot -d ./logs -i inv_email register.robot_** - here we're informing robot that the tag inv_email is being included inside the running scenarios
+* **_robot -d ./logs -e happy register.robot** - here's the opposite of -i which means that the test cases tagged with happy must be excluded from the running scenarios
 
 ---
 ## Devtools regular expressions
