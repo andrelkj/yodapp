@@ -181,6 +181,7 @@ Invalid Email
 ```
 
 The usage of tags is very important and useful for critical cases, smoke testing and regression. You can tag the critical test cases and then run these most important cases all together first.
+
 ---
 ## base.robot
 
@@ -274,6 +275,37 @@ To start the Xpath first we use // and then the following path, for example:
 ```
 
 **OBS.:** (xpath)[1] is used to make the selector consider the first xpath found with those properties. This can be used to filter elements with the same name per order of apperance, starting with 1, 2, 3 and so on
+
+---
+## Split Strings
+
+Initially we defined a keyword to select the birth date inside the datepicker using 3 isolated arguments (month, year, and day). 
+```
+Select Birth Date
+    # Defining entry arguments whom will be used inside the function instead of having to manually add each one of them
+    [Arguments]    ${month}    ${year}    ${day} 
+```
+
+```
+# Entering datepicker information
+    Select Birth Date    dezembro    1980    15
+```
+
+We can improve these splitted strings making them part of the same argument following the steps below:
+
+First we'll change your inputs format:
+
+```
+# Entering datepicker information
+    Select Birth Date    dezembro-1980-15
+```
+
+Then we're going to change your argumets and add a split string separator
+
+```
+@{date}     Split String        %{text_date}        -
+```
+OBS.: I'm not using it because this keyword wasn't found
 
 ---
 ## Radio button and Checkbox
