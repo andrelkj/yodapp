@@ -115,6 +115,10 @@ Wait For Elements State     css=.toast div >> text="Usuário cadastrado com suce
 ### Invalid email validation
 Considering that the only change between the successful and failed validation is the displayed message from the toaster, we'll use the same elements, just copy and pasting from the successful validation scenario, and then change just the necessary elements.
 
+This is one way of doing it, but as the developer can change these elements in the future we'll need to change all those elements in order for the test case to work. One wai of improving it and also follow a best practice is to add encapsulation for those repeated elements.
+
+By using encapsulation it's possible to change all repeated elements all together with only one change.
+
 ---
 ## Locators - Finding elements
 
