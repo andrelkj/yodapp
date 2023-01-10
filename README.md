@@ -91,6 +91,7 @@ Following BDD techniques from Gherking all Test Cases we'll consider all those 3
 
 Toasters are temporary messages displayed inside the page after an action or validation. As they're temporary it's hard to inspect them and sometimes it makes impossible to find those elements while running the application.
 
+### Successful validation
 To deal with those elements use the following steps:
 1. Add a break/sleep while getting the html code used for this page and show this code;
 ```
@@ -110,6 +111,9 @@ Log         ${html}
 ```
 Wait For Elements State     css=.toast div >> text="Usuário cadastrado com sucesso!"    visible     5
 ```
+
+### Invalid email validation
+Considering that the only change between the successful and failed validation is the displayed message from the toaster, we'll use the same elements, just copy and pasting from the successful validation scenario, and then change just the necessary elements.
 
 ---
 ## Locators - Finding elements

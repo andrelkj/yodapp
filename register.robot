@@ -53,6 +53,46 @@ Should register a new character
     # Temporary
     # Sleep    5  
 
+Invalid Email
+
+# Given that the resistration form was acessed
+    # Selecting the button to move to the register page
+    Click    text=Novo
+
+    # Checkpoint (confirming that we're inside the register page)
+    Wait For Elements State    css=.card-header-title >> text=Cadastrar novo usuário
+    ...    visible    5
+
+# When filling in those forms with an invalid email
+    # Filling in the input fields
+    Fill Text    css=input[placeholder^="Nome"]    Darth Vader
+    Fill Text    css=input[placeholder="Email"]    vader&gmail.com
+
+    # Entering a option in the selection field
+    Select Options By    css=.ordem select    value    2 
+    
+    # Entering datepicker information
+    Select Birth Date    dezembro    1980    15
+    
+    # Filling in the input fields, moved down here to follow the fields entering order
+    Fill Text    id=insta    @vader   
+
+    # Selecting the checkbox
+    Click    xpath=//input[@name="comunications"]/../span[@class="check"]
+
+# And submit this form
+    # Selecting the submition button
+    Click    css=button >> text="Cadastrar"
+
+# Then I should see the success message
+    # Accessing html code source to create a proper locator for the toaster
+    # Sleep    1
+    # ${html}    Get Page Source
+    # Log    ${html}
+
+    # Checkpoint (validating toaster)
+    Wait For Elements State    css=.toast div >> text="Oops! O email é incorreto."    visible     5    
+
 *** Keywords ***
 Select Birth Date
     # Defining entry arguments whom will be used inside the function instead of having to manually add each one of them
