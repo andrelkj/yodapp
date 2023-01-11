@@ -330,6 +330,10 @@ Select Birth Date
     Click    xpath=//a[contains(@class, "datepicker-cell")]//span[text()="${date}[2]"
 ```
 
+**OBS.:** This is important to make the code more dinamid while evolving to more complex scenarios!
+
+If needed you can import the String library inside the base.robot file in order to use those functions.
+
 ---
 ## Radio button and Checkbox
 

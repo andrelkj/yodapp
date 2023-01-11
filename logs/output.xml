@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.1 on darwin)" generated="20230110 23:58:04.781" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.11.1 on darwin)" generated="20230111 01:20:25.505" rpa="false" schemaversion="3">
 <suite id="s1" name="Register" source="/Users/andre/Documents/QA Academy/Gravidade Zero/yodapp/register.robot">
 <test id="s1-t1" name="Should register a new character" line="11">
 <kw name="Start Session" library="base" type="SETUP">
@@ -10,27 +10,27 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20230110 23:58:05.286" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "/Users/andre/Documents/QA Academy/Gravidade Zero/yodapp/logs/browser/traces/eb4196ef-081a-4ee6-9138-ca6b0d30d35f"}</msg>
-<msg timestamp="20230110 23:58:05.996" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"/Users/andre/Documents/QA Academy/Gravidade Zero/yodapp/logs/browser/traces/eb4196ef-081a-4ee6-9138-ca6b0d30d35f"}</msg>
-<status status="PASS" starttime="20230110 23:58:05.286" endtime="20230110 23:58:05.996"/>
+<msg timestamp="20230111 01:20:25.994" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "/Users/andre/Documents/QA Academy/Gravidade Zero/yodapp/logs/browser/traces/5657cb29-f4b7-49c2-93f0-9a5d4a44b409"}</msg>
+<msg timestamp="20230111 01:20:26.569" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"/Users/andre/Documents/QA Academy/Gravidade Zero/yodapp/logs/browser/traces/5657cb29-f4b7-49c2-93f0-9a5d4a44b409"}</msg>
+<status status="PASS" starttime="20230111 01:20:25.994" endtime="20230111 01:20:26.569"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>https://yodapp.vercel.app</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20230110 23:58:07.936" level="INFO">Successfully initialized new page object and opened url: https://yodapp.vercel.app</msg>
-<msg timestamp="20230110 23:58:07.936" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20230110 23:58:05.996" endtime="20230110 23:58:07.937"/>
+<msg timestamp="20230111 01:20:28.665" level="INFO">Successfully initialized new page object and opened url: https://yodapp.vercel.app</msg>
+<msg timestamp="20230111 01:20:28.666" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20230111 01:20:26.569" endtime="20230111 01:20:28.667"/>
 </kw>
-<status status="PASS" starttime="20230110 23:58:05.285" endtime="20230110 23:58:07.937"/>
+<status status="PASS" starttime="20230111 01:20:25.993" endtime="20230111 01:20:28.668"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>text=Novo</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:07.938" endtime="20230110 23:58:09.002"/>
+<status status="PASS" starttime="20230111 01:20:28.672" endtime="20230111 01:20:29.747"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.card-header-title &gt;&gt; text=Cadastrar novo usuário</arg>
@@ -39,8 +39,8 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20230110 23:58:09.023" level="INFO">Waited for Element with selector css=.card-header-title &gt;&gt; text=Cadastrar novo usuário at state visible</msg>
-<status status="PASS" starttime="20230110 23:58:09.003" endtime="20230110 23:58:09.023"/>
+<msg timestamp="20230111 01:20:29.769" level="INFO">Waited for Element with selector css=.card-header-title &gt;&gt; text=Cadastrar novo usuário at state visible</msg>
+<status status="PASS" starttime="20230111 01:20:29.748" endtime="20230111 01:20:29.769"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[placeholder^="Nome"]</arg>
@@ -48,8 +48,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20230110 23:58:09.023" level="INFO">Fills the text 'Mestre Yoda' in the given field.</msg>
-<status status="PASS" starttime="20230110 23:58:09.023" endtime="20230110 23:58:10.044"/>
+<msg timestamp="20230111 01:20:29.770" level="INFO">Fills the text 'Mestre Yoda' in the given field.</msg>
+<status status="PASS" starttime="20230111 01:20:29.770" endtime="20230111 01:20:30.792"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[placeholder="Email"]</arg>
@@ -57,8 +57,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20230110 23:58:10.045" level="INFO">Fills the text 'yoda@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20230110 23:58:10.045" endtime="20230110 23:58:11.073"/>
+<msg timestamp="20230111 01:20:30.792" level="INFO">Fills the text 'yoda@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20230111 01:20:30.792" endtime="20230111 01:20:31.816"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>css=.ordem select</arg>
@@ -67,14 +67,14 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:11.074" endtime="20230110 23:58:13.122"/>
+<status status="PASS" starttime="20230111 01:20:31.816" endtime="20230111 01:20:33.861"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>xpath=//input[@value="Cavaleiro Jedi"]/..//span[@class="check"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:13.123" endtime="20230110 23:58:14.171"/>
+<status status="PASS" starttime="20230111 01:20:33.861" endtime="20230111 01:20:34.899"/>
 </kw>
 <kw name="Select Birth Date">
 <arg>fevereiro-1970-20</arg>
@@ -83,15 +83,15 @@
 <arg>${text_date}</arg>
 <arg>-</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<msg timestamp="20230110 23:58:14.172" level="INFO">@{date} = [ fevereiro | 1970 | 20 ]</msg>
-<status status="PASS" starttime="20230110 23:58:14.172" endtime="20230110 23:58:14.172"/>
+<msg timestamp="20230111 01:20:34.900" level="INFO">@{date} = [ fevereiro | 1970 | 20 ]</msg>
+<status status="PASS" starttime="20230111 01:20:34.900" endtime="20230111 01:20:34.901"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>css=input[placeholder="Data de nascimento"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:14.172" endtime="20230110 23:58:15.203"/>
+<status status="PASS" starttime="20230111 01:20:34.901" endtime="20230111 01:20:35.934"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>xpath=(//header[@class="datepicker-header"]//select)[1]</arg>
@@ -100,7 +100,7 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:15.203" endtime="20230110 23:58:17.242"/>
+<status status="PASS" starttime="20230111 01:20:35.934" endtime="20230111 01:20:37.972"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>xpath=(//header[@class="datepicker-header"]//select)[2]</arg>
@@ -109,16 +109,16 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:17.242" endtime="20230110 23:58:19.282"/>
+<status status="PASS" starttime="20230111 01:20:37.973" endtime="20230111 01:20:40.010"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>xpath=//a[contains(@class, "datepicker-cell")]//span[text()="${date}[2]"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:19.283" endtime="20230110 23:58:20.325"/>
+<status status="PASS" starttime="20230111 01:20:40.010" endtime="20230111 01:20:41.055"/>
 </kw>
-<status status="PASS" starttime="20230110 23:58:14.171" endtime="20230110 23:58:20.326"/>
+<status status="PASS" starttime="20230111 01:20:34.900" endtime="20230111 01:20:41.056"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=insta</arg>
@@ -126,22 +126,22 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20230110 23:58:20.326" level="INFO">Fills the text '@yoda' in the given field.</msg>
-<status status="PASS" starttime="20230110 23:58:20.326" endtime="20230110 23:58:21.348"/>
+<msg timestamp="20230111 01:20:41.057" level="INFO">Fills the text '@yoda' in the given field.</msg>
+<status status="PASS" starttime="20230111 01:20:41.056" endtime="20230111 01:20:42.078"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>xpath=//input[@name="comunications"]/../span[@class="check"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:21.349" endtime="20230110 23:58:22.406"/>
+<status status="PASS" starttime="20230111 01:20:42.079" endtime="20230111 01:20:43.134"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>css=button &gt;&gt; text="Cadastrar"</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:22.407" endtime="20230110 23:58:23.460"/>
+<status status="PASS" starttime="20230111 01:20:43.134" endtime="20230111 01:20:44.172"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.toast div &gt;&gt; text="Usuário cadastrado com sucesso!"</arg>
@@ -150,20 +150,20 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20230110 23:58:23.468" level="INFO">Waited for Element with selector css=.toast div &gt;&gt; text="Usuário cadastrado com sucesso!" at state visible</msg>
-<status status="PASS" starttime="20230110 23:58:23.460" endtime="20230110 23:58:23.468"/>
+<msg timestamp="20230111 01:20:44.179" level="INFO">Waited for Element with selector css=.toast div &gt;&gt; text="Usuário cadastrado com sucesso!" at state visible</msg>
+<status status="PASS" starttime="20230111 01:20:44.172" endtime="20230111 01:20:44.180"/>
 </kw>
 <kw name="End Session" library="base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20230110 23:58:23.561" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230110 23:58:23.469" endtime="20230110 23:58:23.561"/>
+<msg timestamp="20230111 01:20:44.276" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230111 01:20:44.180" endtime="20230111 01:20:44.276"/>
 </kw>
-<status status="PASS" starttime="20230110 23:58:23.469" endtime="20230110 23:58:23.561"/>
+<status status="PASS" starttime="20230111 01:20:44.180" endtime="20230111 01:20:44.276"/>
 </kw>
 <tag>happy</tag>
-<status status="PASS" starttime="20230110 23:58:05.284" endtime="20230110 23:58:23.561"/>
+<status status="PASS" starttime="20230111 01:20:25.992" endtime="20230111 01:20:44.276"/>
 </test>
 <test id="s1-t2" name="Invalid Email" line="58">
 <kw name="Start Session" library="base" type="SETUP">
@@ -174,27 +174,27 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20230110 23:58:23.607" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "/Users/andre/Documents/QA Academy/Gravidade Zero/yodapp/logs/browser/traces/f58fc4c7-5475-42d8-bd76-cd7acffc7d47"}</msg>
-<msg timestamp="20230110 23:58:23.808" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"/Users/andre/Documents/QA Academy/Gravidade Zero/yodapp/logs/browser/traces/f58fc4c7-5475-42d8-bd76-cd7acffc7d47"}</msg>
-<status status="PASS" starttime="20230110 23:58:23.607" endtime="20230110 23:58:23.808"/>
+<msg timestamp="20230111 01:20:44.320" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "/Users/andre/Documents/QA Academy/Gravidade Zero/yodapp/logs/browser/traces/c3099040-d64b-4209-8098-3dde5a1f8d0f"}</msg>
+<msg timestamp="20230111 01:20:44.538" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"/Users/andre/Documents/QA Academy/Gravidade Zero/yodapp/logs/browser/traces/c3099040-d64b-4209-8098-3dde5a1f8d0f"}</msg>
+<status status="PASS" starttime="20230111 01:20:44.319" endtime="20230111 01:20:44.538"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>https://yodapp.vercel.app</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20230110 23:58:25.642" level="INFO">Successfully initialized new page object and opened url: https://yodapp.vercel.app</msg>
-<msg timestamp="20230110 23:58:25.648" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20230110 23:58:23.808" endtime="20230110 23:58:25.658"/>
+<msg timestamp="20230111 01:20:46.399" level="INFO">Successfully initialized new page object and opened url: https://yodapp.vercel.app</msg>
+<msg timestamp="20230111 01:20:46.400" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20230111 01:20:44.538" endtime="20230111 01:20:46.401"/>
 </kw>
-<status status="PASS" starttime="20230110 23:58:23.607" endtime="20230110 23:58:25.659"/>
+<status status="PASS" starttime="20230111 01:20:44.319" endtime="20230111 01:20:46.402"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>text=Novo</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:25.659" endtime="20230110 23:58:26.718"/>
+<status status="PASS" starttime="20230111 01:20:46.403" endtime="20230111 01:20:47.460"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.card-header-title &gt;&gt; text=Cadastrar novo usuário</arg>
@@ -203,8 +203,8 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20230110 23:58:26.738" level="INFO">Waited for Element with selector css=.card-header-title &gt;&gt; text=Cadastrar novo usuário at state visible</msg>
-<status status="PASS" starttime="20230110 23:58:26.719" endtime="20230110 23:58:26.738"/>
+<msg timestamp="20230111 01:20:47.479" level="INFO">Waited for Element with selector css=.card-header-title &gt;&gt; text=Cadastrar novo usuário at state visible</msg>
+<status status="PASS" starttime="20230111 01:20:47.461" endtime="20230111 01:20:47.479"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[placeholder^="Nome"]</arg>
@@ -212,8 +212,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20230110 23:58:26.739" level="INFO">Fills the text 'Darth Vader' in the given field.</msg>
-<status status="PASS" starttime="20230110 23:58:26.738" endtime="20230110 23:58:27.757"/>
+<msg timestamp="20230111 01:20:47.480" level="INFO">Fills the text 'Darth Vader' in the given field.</msg>
+<status status="PASS" starttime="20230111 01:20:47.479" endtime="20230111 01:20:48.500"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[placeholder="Email"]</arg>
@@ -221,8 +221,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20230110 23:58:27.759" level="INFO">Fills the text 'vader&amp;gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20230110 23:58:27.758" endtime="20230110 23:58:28.783"/>
+<msg timestamp="20230111 01:20:48.501" level="INFO">Fills the text 'vader&amp;gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20230111 01:20:48.501" endtime="20230111 01:20:49.525"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>css=.ordem select</arg>
@@ -231,7 +231,7 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:28.784" endtime="20230110 23:58:30.822"/>
+<status status="PASS" starttime="20230111 01:20:49.525" endtime="20230111 01:20:51.563"/>
 </kw>
 <kw name="Select Birth Date">
 <arg>dezembro-1980-15</arg>
@@ -240,15 +240,15 @@
 <arg>${text_date}</arg>
 <arg>-</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<msg timestamp="20230110 23:58:30.824" level="INFO">@{date} = [ dezembro | 1980 | 15 ]</msg>
-<status status="PASS" starttime="20230110 23:58:30.824" endtime="20230110 23:58:30.824"/>
+<msg timestamp="20230111 01:20:51.566" level="INFO">@{date} = [ dezembro | 1980 | 15 ]</msg>
+<status status="PASS" starttime="20230111 01:20:51.565" endtime="20230111 01:20:51.566"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>css=input[placeholder="Data de nascimento"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:30.824" endtime="20230110 23:58:31.872"/>
+<status status="PASS" starttime="20230111 01:20:51.566" endtime="20230111 01:20:52.619"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>xpath=(//header[@class="datepicker-header"]//select)[1]</arg>
@@ -257,7 +257,7 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:31.873" endtime="20230110 23:58:33.906"/>
+<status status="PASS" starttime="20230111 01:20:52.619" endtime="20230111 01:20:54.652"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>xpath=(//header[@class="datepicker-header"]//select)[2]</arg>
@@ -266,16 +266,16 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:33.907" endtime="20230110 23:58:35.955"/>
+<status status="PASS" starttime="20230111 01:20:54.653" endtime="20230111 01:20:56.698"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>xpath=//a[contains(@class, "datepicker-cell")]//span[text()="${date}[2]"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:35.956" endtime="20230110 23:58:36.991"/>
+<status status="PASS" starttime="20230111 01:20:56.698" endtime="20230111 01:20:57.731"/>
 </kw>
-<status status="PASS" starttime="20230110 23:58:30.823" endtime="20230110 23:58:36.991"/>
+<status status="PASS" starttime="20230111 01:20:51.563" endtime="20230111 01:20:57.731"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=insta</arg>
@@ -283,22 +283,22 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20230110 23:58:36.992" level="INFO">Fills the text '@vader' in the given field.</msg>
-<status status="PASS" starttime="20230110 23:58:36.992" endtime="20230110 23:58:38.013"/>
+<msg timestamp="20230111 01:20:57.732" level="INFO">Fills the text '@vader' in the given field.</msg>
+<status status="PASS" starttime="20230111 01:20:57.732" endtime="20230111 01:20:58.752"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>xpath=//input[@name="comunications"]/../span[@class="check"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:38.014" endtime="20230110 23:58:39.070"/>
+<status status="PASS" starttime="20230111 01:20:58.752" endtime="20230111 01:20:59.802"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>css=button &gt;&gt; text="Cadastrar"</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20230110 23:58:39.070" endtime="20230110 23:58:40.108"/>
+<status status="PASS" starttime="20230111 01:20:59.802" endtime="20230111 01:21:00.832"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.toast div &gt;&gt; text="Oops! O email é incorreto."</arg>
@@ -307,23 +307,23 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20230110 23:58:40.118" level="INFO">Waited for Element with selector css=.toast div &gt;&gt; text="Oops! O email é incorreto." at state visible</msg>
-<status status="PASS" starttime="20230110 23:58:40.108" endtime="20230110 23:58:40.118"/>
+<msg timestamp="20230111 01:21:00.840" level="INFO">Waited for Element with selector css=.toast div &gt;&gt; text="Oops! O email é incorreto." at state visible</msg>
+<status status="PASS" starttime="20230111 01:21:00.832" endtime="20230111 01:21:00.840"/>
 </kw>
 <kw name="End Session" library="base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20230110 23:58:40.216" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230110 23:58:40.119" endtime="20230110 23:58:40.216"/>
+<msg timestamp="20230111 01:21:00.942" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230111 01:21:00.840" endtime="20230111 01:21:00.942"/>
 </kw>
-<status status="PASS" starttime="20230110 23:58:40.119" endtime="20230110 23:58:40.216"/>
+<status status="PASS" starttime="20230111 01:21:00.840" endtime="20230111 01:21:00.943"/>
 </kw>
 <tag>inv_email</tag>
-<status status="PASS" starttime="20230110 23:58:23.606" endtime="20230110 23:58:40.216"/>
+<status status="PASS" starttime="20230111 01:20:44.318" endtime="20230111 01:21:00.943"/>
 </test>
 <doc>Test suite for character creation</doc>
-<status status="PASS" starttime="20230110 23:58:04.781" endtime="20230110 23:58:40.271"/>
+<status status="PASS" starttime="20230111 01:20:25.506" endtime="20230111 01:21:00.986"/>
 </suite>
 <statistics>
 <total>

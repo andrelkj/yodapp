@@ -2,6 +2,7 @@
 Documentation    This isn't a test suite, but the primary file of the project
 
 Library    Browser
+Library    String 
 
 *** Keywords ***
 Start Session
