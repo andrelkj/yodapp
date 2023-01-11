@@ -1,7 +1,8 @@
 *** Settings *** 
 Documentation    Test suite to see if yodapp is online
 
-Resource    base.robot
+# Importing sources from the base file
+Resource    ${EXECDIR}/resources/base.robot
 
 Test Setup    Start Session
 Test Teardown    End Session

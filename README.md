@@ -335,6 +335,25 @@ Select Birth Date
 If needed you can import the String library inside the base.robot file in order to use those functions.
 
 ---
+## Organizing Robot files
+
+Here we're organizing our files, separating them into resources (those containing configurational information - libs, keywords, ...) and tests (those containing our test cases and scenarios).
+
+While changing files' path note that our test cases can probably break, this happens because the source files cannot be found anymore. In order to fix this we'll need to change the destination to the new actual path:
+
+Old path:
+```
+Resource    base.robot
+```
+
+New fixed path:
+```
+${EXECDIR}/resources/base.robot
+```
+
+**OBS.:** without using the Robot Framework Intellisense extension ${EXECDIR} argument don't work so we'll need to use another way to identify the path. For example, using the hole path: /Users/andre/Documents/QA Academy/Gravidade Zero/yodapp/resources/base.robot
+
+---
 ## Radio button and Checkbox
 
 While trying to select or find Radio button elements it's important to keep in mind if the button is visible or hidded. Some times this elements are set as hidden in order to apply style to it. 

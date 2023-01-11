@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Test suite for character creation
 
-Resource    base.robot
+Resource    ${EXECDIR}/resources/base.robot
 
 Test Setup    Start Session
 Test Teardown    End Session
