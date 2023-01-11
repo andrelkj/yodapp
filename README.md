@@ -124,6 +124,10 @@ By using encapsulation it's possible to change all repeated elements all togethe
 
 Locators are used to find elements inside the page
 
+Priority order to consider while dealing with forms/inputs: id > name > placeholder
+
+**OBS.:** placeholder and name variables are exclusive for inputs, select buttons and text areas, also they can be used for checkboxes and radio buttons. But they'll never be present in divs, tables and buttons.
+
 ```
 css=.navbar-item
 ```
@@ -136,6 +140,49 @@ css=.navbar-item >> text=Que a Força (qualidade) esteja com você!
 ```
 
 It is recommended to prioritize using CSS selector first and then using XPath only if there's no other option.
+
+### AppActions - Changing elements
+
+Elements properties can change frequently making old selectors invalid for new versions of the application. We can easily solve this by updating the selectors to more up to date properties, but it needs to be done individually for each of the old invalid elements and this can be impracticable for projects with hundreds of test cases that use those same elements.
+
+A best practice to solve the problem of changed elements is using AppActions.
+**Example:** register flow:
+1. Define scenarios which are part of the registration;
+2. Look for duplicates in those scenarios;
+3. Create a keyword to "encapsulate" all those scenarios into the same place;
+4. Add this keyword to your individual test cases.
+
+Filling the inputs:
+```
+Fill User Form
+    [Arguments]    ${name}    ${email}    ${ordem}
+
+# When filling in those forms with Master Yoda's data
+    # Filling in the input fields
+    Fill Text    css=input[placeholder^="Nome"]    ${name}
+    Fill Text    css=input[placeholder="Email"]    ${email}
+```
+
+Radio button and checkbox selection are either occasional and/or optional so we'll encapsulating them separatelly in order to use just when needed.
+
+Selecting radio buttons:
+```
+# Selecting radio buttons dinamically
+Select Jedi
+    [Arguments] ${tpjedi}
+
+    # Selecting the radio buttom
+    Click    xpath=//input[@value="${tpjedi}"]/..//span[@class="check"]
+```
+
+Selecting checkboxes
+```
+# Selecting checkbox dinamically
+Check Accept comunications
+    # Selecting the checkbox
+    Click    xpath=//input[@name="comunications"]/../span[@class="check"]
+```
+**OBS.:** By doing this you'll only need to change the keyword variables and it'll be applied to all your test cases. This means that you can use the same code while changing the test mass by using defined variables.
 
 ---
 ## Hooks and Encapsulation

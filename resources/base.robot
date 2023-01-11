@@ -2,12 +2,14 @@
 Documentation    This isn't a test suite, but the primary file of the project
 
 Library    Browser
-Library    String 
+Library    String
+
+Resource    actions.robot
 
 *** Keywords ***
 Start Session
-    New Browser    chromium    headless=False   slowMo=00:00:00 
-    New Page    https://yodapp-testing.vercel.app
+    New Browser    chromium                             headless=False    slowMo=00:00:00 
+    New Page       https://yodapp-testing.vercel.app
 
 End Session
     Take Screenshot
