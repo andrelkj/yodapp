@@ -1,188 +1,239 @@
-{"level":30,"time":"2023-01-11T05:04:14.703Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Listening on 57021"}
-{"level":30,"time":"2023-01-11T05:04:14.796Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:14.796Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:14.798Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:14.798Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:14.800Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2023-01-11T05:04:15.351Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method newBrowser"}
-{"level":30,"time":"2023-01-11T05:04:15.354Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method newPage"}
-{"level":30,"time":"2023-01-11T05:04:15.354Z","pid":70847,"hostname":"Andres-iMac.local","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2023-01-11T05:04:15.362Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:15.877Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Video path: undefined"}
-{"level":30,"time":"2023-01-11T05:04:15.877Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:17.293Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method newPage"}
-{"level":30,"time":"2023-01-11T05:04:17.299Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:17.495Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:17.496Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:17.498Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:17.499Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:17.500Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:17.501Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:17.501Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
-{"level":30,"time":"2023-01-11T05:04:17.501Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:17.536Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:17.536Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:17.537Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:17.537Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:17.538Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:17.538Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:17.540Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:17.540Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:17.541Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:17.541Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
-{"level":30,"time":"2023-01-11T05:04:17.541Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:17.542Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method closeContext"}
-{"level":30,"time":"2023-01-11T05:04:17.561Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Removed page=cc240501-df19-491c-baf5-0d8313e8a3e8 from context=aafba729-793b-4a91-9ffb-65b3ad6c7344 page stack"}
-{"level":30,"time":"2023-01-11T05:04:17.573Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method closeContext"}
-{"level":30,"time":"2023-01-11T05:04:17.574Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:17.574Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:17.575Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2023-01-11T05:04:17.744Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method newBrowser"}
-{"level":30,"time":"2023-01-11T05:04:17.746Z","pid":70847,"hostname":"Andres-iMac.local","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2023-01-11T05:04:17.746Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method newPage"}
-{"level":30,"time":"2023-01-11T05:04:17.750Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:18.209Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Video path: undefined"}
-{"level":30,"time":"2023-01-11T05:04:18.209Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:18.921Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method newPage"}
-{"level":30,"time":"2023-01-11T05:04:18.924Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2023-01-11T05:04:18.924Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=.navbar-item >> text=Que a Força (qualidade) esteja com você! in page."}
-{"level":30,"time":"2023-01-11T05:04:18.941Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2023-01-11T05:04:18.942Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:19.116Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:19.117Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.118Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.119Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.120Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.120Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:19.120Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
-{"level":30,"time":"2023-01-11T05:04:19.120Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:19.128Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.129Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.129Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:19.129Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:19.130Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:19.130Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:19.131Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.132Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.133Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:19.133Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
-{"level":30,"time":"2023-01-11T05:04:19.133Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:19.136Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method closeContext"}
-{"level":30,"time":"2023-01-11T05:04:19.153Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Removed page=78fc31e8-002f-421e-ba4d-684221d10baf from context=898cf28d-bcd4-4374-8683-9eb498b3c861 page stack"}
-{"level":30,"time":"2023-01-11T05:04:19.159Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method closeContext"}
-{"level":30,"time":"2023-01-11T05:04:19.161Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.161Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.164Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.164Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.165Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.165Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:19.166Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2023-01-11T05:04:19.328Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method newBrowser"}
-{"level":30,"time":"2023-01-11T05:04:19.333Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method newPage"}
-{"level":30,"time":"2023-01-11T05:04:19.334Z","pid":70847,"hostname":"Andres-iMac.local","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2023-01-11T05:04:19.337Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:19.789Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Video path: undefined"}
-{"level":30,"time":"2023-01-11T05:04:19.789Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:20.159Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method newPage"}
-{"level":30,"time":"2023-01-11T05:04:20.161Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
-{"level":30,"time":"2023-01-11T05:04:20.161Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with text=Novo in page."}
-{"level":30,"time":"2023-01-11T05:04:20.734Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method click"}
-{"level":30,"time":"2023-01-11T05:04:20.736Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2023-01-11T05:04:20.736Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=.card-header-title >> text=Cadastrar novo usuário in page."}
-{"level":30,"time":"2023-01-11T05:04:20.867Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2023-01-11T05:04:20.868Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-01-11T05:04:20.868Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=input[placeholder^=\"Nome\"] in page."}
-{"level":30,"time":"2023-01-11T05:04:30.879Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Error of node method  fillText"}
-================= Original suppressed error =================
-locator.fill: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for locator('input[placeholder^="Nome"]')
-============================================================
-    at fillText (/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js:7560:17)
-    at async PlaywrightServer.fillText (/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js:8484:28) {
-  name: 'TimeoutError'
-}
-=============================================================
-{"level":30,"time":"2023-01-11T05:04:30.894Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:30.997Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:31.006Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:31.065Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:31.067Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:31.068Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:31.068Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:31.069Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:31.069Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:31.069Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
-{"level":30,"time":"2023-01-11T05:04:31.069Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:31.072Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:31.074Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:31.075Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:31.075Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:31.075Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:31.075Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:31.076Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:31.077Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:31.077Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:31.077Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
-{"level":30,"time":"2023-01-11T05:04:31.077Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:31.079Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method closeContext"}
-{"level":30,"time":"2023-01-11T05:04:31.093Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Removed page=983a49b1-7108-44fd-8a43-52ece6fc5993 from context=6f1568d5-fdef-4a2e-b66c-d08088777643 page stack"}
-{"level":30,"time":"2023-01-11T05:04:31.103Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method closeContext"}
-{"level":30,"time":"2023-01-11T05:04:31.104Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:31.104Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:31.105Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2023-01-11T05:04:31.557Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method newBrowser"}
-{"level":30,"time":"2023-01-11T05:04:31.559Z","pid":70847,"hostname":"Andres-iMac.local","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2023-01-11T05:04:31.559Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method newPage"}
-{"level":30,"time":"2023-01-11T05:04:31.563Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:31.959Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Video path: undefined"}
-{"level":30,"time":"2023-01-11T05:04:31.959Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:32.329Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method newPage"}
-{"level":30,"time":"2023-01-11T05:04:32.331Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
-{"level":30,"time":"2023-01-11T05:04:32.331Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with text=Novo in page."}
-{"level":30,"time":"2023-01-11T05:04:32.401Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method click"}
-{"level":30,"time":"2023-01-11T05:04:32.403Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2023-01-11T05:04:32.403Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=.card-header-title >> text=Cadastrar novo usuário in page."}
-{"level":30,"time":"2023-01-11T05:04:32.502Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2023-01-11T05:04:32.503Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method fillText"}
-{"level":30,"time":"2023-01-11T05:04:32.503Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=input[placeholder^=\"Nome\"] in page."}
-{"level":30,"time":"2023-01-11T05:04:42.505Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Error of node method  fillText"}
-================= Original suppressed error =================
-locator.fill: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for locator('input[placeholder^="Nome"]')
-============================================================
-    at fillText (/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js:7560:17)
-    at async PlaywrightServer.fillText (/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js:8484:28) {
-  name: 'TimeoutError'
-}
-=============================================================
-{"level":30,"time":"2023-01-11T05:04:42.510Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:42.609Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:42.612Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:42.681Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2023-01-11T05:04:42.682Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:42.683Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:42.683Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:42.684Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:42.684Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:42.684Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
-{"level":30,"time":"2023-01-11T05:04:42.684Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:42.687Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:42.689Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:42.689Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:42.690Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:42.690Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:42.690Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2023-01-11T05:04:42.691Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:42.691Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:42.692Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active context"}
-{"level":30,"time":"2023-01-11T05:04:42.692Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
-{"level":30,"time":"2023-01-11T05:04:42.692Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Changed active page"}
-{"level":30,"time":"2023-01-11T05:04:42.694Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method closeContext"}
-{"level":30,"time":"2023-01-11T05:04:42.710Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Removed page=bab43390-0454-4ca4-b114-8141b0c4d1f0 from context=e74bf44b-f142-4780-afcc-91a4a9950cb3 page stack"}
-{"level":30,"time":"2023-01-11T05:04:42.716Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method closeContext"}
-{"level":30,"time":"2023-01-11T05:04:42.718Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:42.718Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2023-01-11T05:04:42.734Z","pid":70847,"hostname":"Andres-iMac.local","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2023-01-11T05:04:42.896Z","pid":70847,"hostname":"Andres-iMac.local","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2023-01-11T05:32:56.510Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Listening on 65202"}
+{"level":30,"time":"2023-01-11T05:32:56.561Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:56.562Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:56.564Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:56.564Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:56.565Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-01-11T05:32:57.102Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-01-11T05:32:57.105Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-01-11T05:32:57.105Z","pid":73807,"hostname":"Andres-iMac.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-01-11T05:32:57.113Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:32:57.519Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Video path: undefined"}
+{"level":30,"time":"2023-01-11T05:32:57.519Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:32:57.940Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method newPage"}
+{"level":30,"time":"2023-01-11T05:32:57.946Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-11T05:32:58.133Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-11T05:32:58.134Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:58.135Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:58.136Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:58.137Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:58.137Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:32:58.137Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-11T05:32:58.138Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:32:58.145Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:58.166Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:58.167Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:32:58.167Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:32:58.168Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:32:58.168Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:32:58.170Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:58.171Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:58.172Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:32:58.172Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-11T05:32:58.172Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:32:58.174Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-01-11T05:32:58.188Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Removed page=b1fa43ae-fc38-4fb5-a4d6-7d6c7fadeb86 from context=382b9438-1fc0-4a01-8bda-86c12d7635d3 page stack"}
+{"level":30,"time":"2023-01-11T05:32:58.196Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-01-11T05:32:58.197Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:58.197Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:58.198Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-01-11T05:32:58.394Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-01-11T05:32:58.396Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-01-11T05:32:58.396Z","pid":73807,"hostname":"Andres-iMac.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-01-11T05:32:58.399Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:32:58.743Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Video path: undefined"}
+{"level":30,"time":"2023-01-11T05:32:58.743Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:32:59.112Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method newPage"}
+{"level":30,"time":"2023-01-11T05:32:59.115Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-01-11T05:32:59.116Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=.navbar-item >> text=Que a Força (qualidade) esteja com você! in page."}
+{"level":30,"time":"2023-01-11T05:32:59.132Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-01-11T05:32:59.133Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-11T05:32:59.293Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-11T05:32:59.294Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.295Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.296Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.298Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.299Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:32:59.299Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-11T05:32:59.299Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:32:59.306Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.307Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.308Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:32:59.308Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:32:59.308Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:32:59.308Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:32:59.309Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.310Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.310Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:32:59.310Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-11T05:32:59.310Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:32:59.312Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-01-11T05:32:59.327Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Removed page=0b47fdec-5bb8-4105-b18b-89035e067795 from context=9610876f-0c64-40da-8bed-d1f01f07163c page stack"}
+{"level":30,"time":"2023-01-11T05:32:59.336Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-01-11T05:32:59.337Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.337Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.339Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.339Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.340Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.340Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:32:59.341Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-01-11T05:32:59.510Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-01-11T05:32:59.526Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-01-11T05:32:59.526Z","pid":73807,"hostname":"Andres-iMac.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-01-11T05:32:59.534Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:32:59.959Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Video path: undefined"}
+{"level":30,"time":"2023-01-11T05:32:59.959Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:33:00.315Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method newPage"}
+{"level":30,"time":"2023-01-11T05:33:00.316Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.317Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with text=Novo in page."}
+{"level":30,"time":"2023-01-11T05:33:00.378Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.379Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-01-11T05:33:00.379Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=.card-header-title >> text=Cadastrar novo usuário in page."}
+{"level":30,"time":"2023-01-11T05:33:00.486Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-01-11T05:33:00.487Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:00.488Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=input[id=\"nome\"] in page."}
+{"level":30,"time":"2023-01-11T05:33:00.500Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:00.502Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:00.502Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=input[id=\"email\"] in page."}
+{"level":30,"time":"2023-01-11T05:33:00.512Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:00.514Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:00.514Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=.ordem select in page."}
+{"level":30,"time":"2023-01-11T05:33:00.533Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Option entries: 3"}
+{"level":30,"time":"2023-01-11T05:33:00.533Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:00.533Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-01-11T05:33:00.535Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.535Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with xpath=//input[@value=\"Cavaleiro Jedi\"]/..//span[@class=\"check\"] in page."}
+{"level":30,"time":"2023-01-11T05:33:00.569Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.571Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.571Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=input[name=\"Data de nascimento\"] in page."}
+{"level":30,"time":"2023-01-11T05:33:00.603Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.604Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:00.604Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with xpath=(//header[@class=\"datepicker-header\"]//select)[1] in page."}
+{"level":30,"time":"2023-01-11T05:33:00.617Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Option entries: 12"}
+{"level":30,"time":"2023-01-11T05:33:00.617Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:00.617Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-01-11T05:33:00.618Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:00.618Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with xpath=(//header[@class=\"datepicker-header\"]//select)[2] in page."}
+{"level":30,"time":"2023-01-11T05:33:00.635Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Option entries: 111"}
+{"level":30,"time":"2023-01-11T05:33:00.635Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:00.635Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-01-11T05:33:00.636Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.637Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with xpath=//a[contains(@class, \"datepicker-cell\")]//span[text()=\"20\"] in page."}
+{"level":30,"time":"2023-01-11T05:33:00.672Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.673Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:00.673Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with id=insta in page."}
+{"level":30,"time":"2023-01-11T05:33:00.684Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:00.685Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.685Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with xpath=//input[@name=\"comunications\"]/../span[@class=\"check\"] in page."}
+{"level":30,"time":"2023-01-11T05:33:00.802Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.803Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.803Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=button >> text=\"Cadastrar\" in page."}
+{"level":30,"time":"2023-01-11T05:33:00.846Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-11T05:33:00.849Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-01-11T05:33:00.849Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=.toast div >> text=\"Usuário cadastrado com sucesso!\" in page."}
+{"level":30,"time":"2023-01-11T05:33:00.857Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-01-11T05:33:00.859Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-11T05:33:00.936Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-11T05:33:00.937Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:00.937Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:00.938Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:00.938Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:00.939Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:33:00.939Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-11T05:33:00.939Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:33:00.941Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:00.943Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:00.944Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:33:00.944Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:33:00.944Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:33:00.944Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:33:00.945Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:00.946Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:00.946Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:33:00.946Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-11T05:33:00.946Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:33:00.951Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-01-11T05:33:00.964Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Removed page=48cf062e-b0ac-4f74-b6c0-5144e2d41aba from context=4083e7a3-d8c4-4ce9-b0a6-8e556c5b4632 page stack"}
+{"level":30,"time":"2023-01-11T05:33:00.972Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-01-11T05:33:00.972Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:00.972Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:00.973Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-01-11T05:33:01.138Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-01-11T05:33:01.141Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-01-11T05:33:01.141Z","pid":73807,"hostname":"Andres-iMac.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-01-11T05:33:01.155Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:33:01.494Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Video path: undefined"}
+{"level":30,"time":"2023-01-11T05:33:01.494Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:33:01.848Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method newPage"}
+{"level":30,"time":"2023-01-11T05:33:01.850Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-11T05:33:01.850Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with text=Novo in page."}
+{"level":30,"time":"2023-01-11T05:33:02.041Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-11T05:33:02.043Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-01-11T05:33:02.043Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=.card-header-title >> text=Cadastrar novo usuário in page."}
+{"level":30,"time":"2023-01-11T05:33:02.150Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-01-11T05:33:02.152Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:02.152Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=input[id=\"nome\"] in page."}
+{"level":30,"time":"2023-01-11T05:33:02.161Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:02.162Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:02.162Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=input[id=\"email\"] in page."}
+{"level":30,"time":"2023-01-11T05:33:02.172Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:02.173Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:02.173Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=.ordem select in page."}
+{"level":30,"time":"2023-01-11T05:33:02.187Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Option entries: 3"}
+{"level":30,"time":"2023-01-11T05:33:02.187Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:02.187Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-01-11T05:33:02.188Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-11T05:33:02.188Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=input[name=\"Data de nascimento\"] in page."}
+{"level":30,"time":"2023-01-11T05:33:02.222Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-11T05:33:02.223Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:02.223Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with xpath=(//header[@class=\"datepicker-header\"]//select)[1] in page."}
+{"level":30,"time":"2023-01-11T05:33:02.235Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Option entries: 12"}
+{"level":30,"time":"2023-01-11T05:33:02.235Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:02.235Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-01-11T05:33:02.236Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:02.236Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with xpath=(//header[@class=\"datepicker-header\"]//select)[2] in page."}
+{"level":30,"time":"2023-01-11T05:33:02.250Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Option entries: 111"}
+{"level":30,"time":"2023-01-11T05:33:02.250Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method selectOption"}
+{"level":30,"time":"2023-01-11T05:33:02.250Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Selected entries: 1"}
+{"level":30,"time":"2023-01-11T05:33:02.252Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-11T05:33:02.252Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with xpath=//a[contains(@class, \"datepicker-cell\")]//span[text()=\"15\"] in page."}
+{"level":30,"time":"2023-01-11T05:33:02.289Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-11T05:33:02.290Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:02.290Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with id=insta in page."}
+{"level":30,"time":"2023-01-11T05:33:02.301Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2023-01-11T05:33:02.301Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-11T05:33:02.302Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with xpath=//input[@name=\"comunications\"]/../span[@class=\"check\"] in page."}
+{"level":30,"time":"2023-01-11T05:33:02.422Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-11T05:33:02.423Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2023-01-11T05:33:02.424Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=button >> text=\"Cadastrar\" in page."}
+{"level":30,"time":"2023-01-11T05:33:02.456Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2023-01-11T05:33:02.457Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-01-11T05:33:02.457Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Strict mode is enabled, find Locator with css=.toast div >> text=\"Oops! O email é incorreto.\" in page."}
+{"level":30,"time":"2023-01-11T05:33:02.460Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-01-11T05:33:02.462Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-01-11T05:33:02.554Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-01-11T05:33:02.555Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:02.556Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:02.556Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:02.557Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:02.557Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:33:02.557Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-11T05:33:02.557Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:33:02.559Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:02.561Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:02.562Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:33:02.562Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:33:02.562Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:33:02.562Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-01-11T05:33:02.563Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:02.566Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:02.567Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2023-01-11T05:33:02.567Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changing current active page"}
+{"level":30,"time":"2023-01-11T05:33:02.567Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2023-01-11T05:33:02.568Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-01-11T05:33:02.588Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Removed page=a3776cff-fa84-4b0f-b17f-8a1784f57775 from context=030acf87-9126-4fe5-8947-19f7b63f5ec6 page stack"}
+{"level":30,"time":"2023-01-11T05:33:02.595Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-01-11T05:33:02.596Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:02.596Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-01-11T05:33:02.611Z","pid":73807,"hostname":"Andres-iMac.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-01-11T05:33:02.819Z","pid":73807,"hostname":"Andres-iMac.local","msg":"End of node method closeAllBrowsers"}

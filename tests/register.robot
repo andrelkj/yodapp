@@ -21,8 +21,8 @@ Should register a new character
 
 # When filling in those forms with Master Yoda's data
     # Filling in the input fields
-    Fill Text    css=input[placeholder^="Nome"]    Mestre Yoda
-    Fill Text    css=input[placeholder="Email"]    yoda@gmail.com
+    Fill Text    css=input[id="nome"]    Mestre Yoda
+    Fill Text    css=input[id="email"]    yoda@gmail.com
 
     # Entering a option in the selection field
     Select Options By    css=.ordem select    value    1 
@@ -68,8 +68,8 @@ Invalid Email
 
 # When filling in those forms with an invalid email
     # Filling in the input fields
-    Fill Text    css=input[placeholder^="Nome"]    Darth Vader
-    Fill Text    css=input[placeholder="Email"]    vader&gmail.com
+    Fill Text    css=input[id="nome"]    Darth Vader
+    Fill Text    css=input[id="email"]    vader&gmail.com
 
     # Entering a option in the selection field
     Select Options By    css=.ordem select    value    2 
@@ -103,7 +103,7 @@ Select Birth Date
 
     @{date}    Split String    ${text_date}    -
 
-    Click    css=input[placeholder="Data de nascimento"]
+    Click    css=input[name="Data de nascimento"]
 
     Select Options By    xpath=(//header[@class="datepicker-header"]//select)[1]
     ...    text    ${date}[0]
