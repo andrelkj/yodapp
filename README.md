@@ -303,9 +303,32 @@ First we'll change your inputs format:
 Then we're going to change your argumets and add a split string separator
 
 ```
-@{date}     Split String        %{text_date}        -
+    [Arguments]    ${text_date}
+
+    @{date}    Split String    ${text_date}    -
 ```
-OBS.: I'm not using it because this keyword wasn't found
+
+Here where saying for robot to expect a date text and split then into individual strings based on the given separator, in this case defined as "-". Then we're savings it inside a list using @{date}.
+
+In the end we'll add this list component with an indicator so the robot can undestand where to use each argument:
+
+```
+Select Birth Date
+    # Defining entry arguments whom will be used inside the function instead of having to manually add each one of them
+    [Arguments]    ${text_date}
+
+    @{date}    Split String    ${text_date}    -
+
+    Click    css=input[placeholder="Data de nascimento"]
+
+    Select Options By    xpath=(//header[@class="datepicker-header"]//select)[1]
+    ...    text    ${date}[0]
+
+    Select Options By    xpath=(//header[@class="datepicker-header"]//select)[2]
+    ...    value    ${date}[1]
+
+    Click    xpath=//a[contains(@class, "datepicker-cell")]//span[text()="${date}[2]"
+```
 
 ---
 ## Radio button and Checkbox
@@ -373,6 +396,7 @@ This is a better option because it's format uses more properties, making the ele
 * **_..._** - make possible to break arguments in different lines inside the same function
 * **_index_** - follow a defined ordem (indexation)
 * **_click_** - select the defined element
+* **_Split String_** - slip arguments into individual strings based on the separator
 
 
 **OBS.:** using wait instead of sleep is the best practice once the element can be found before 5 seconds, giving you time gains in comparison with the sleep function.

@@ -5,6 +5,7 @@ Resource    base.robot
 
 Test Setup    Start Session
 Test Teardown    End Session
+Library    String
 
 *** Test Cases ***
 Should register a new character
@@ -30,7 +31,7 @@ Should register a new character
     Click    xpath=//input[@value="Cavaleiro Jedi"]/..//span[@class="check"]
     
     # Entering datepicker information
-    Select Birth Date    fevereiro    1970    20
+    Select Birth Date    fevereiro-1970-20
     
     # Filling in the input fields, moved down here to follow the fields entering order
     Fill Text    id=insta    @yoda   
@@ -74,7 +75,7 @@ Invalid Email
     Select Options By    css=.ordem select    value    2 
     
     # Entering datepicker information
-    Select Birth Date    dezembro    1980    15
+    Select Birth Date    dezembro-1980-15
     
     # Filling in the input fields, moved down here to follow the fields entering order
     Fill Text    id=insta    @vader   
@@ -98,15 +99,16 @@ Invalid Email
 *** Keywords ***
 Select Birth Date
     # Defining entry arguments whom will be used inside the function instead of having to manually add each one of them
-    [Arguments]    ${month}    ${year}    ${day} 
+    [Arguments]    ${text_date}
+
+    @{date}    Split String    ${text_date}    -
 
     Click    css=input[placeholder="Data de nascimento"]
 
     Select Options By    xpath=(//header[@class="datepicker-header"]//select)[1]
-    ...    text    ${month}
+    ...    text    ${date}[0]
 
     Select Options By    xpath=(//header[@class="datepicker-header"]//select)[2]
-    ...    value    ${year}
+    ...    value    ${date}[1]
 
-    Click    xpath=//a[contains(@class, "datepicker-cell")]//span[text()="${day}"]
-
+    Click    xpath=//a[contains(@class, "datepicker-cell")]//span[text()="${date}[2]"]
