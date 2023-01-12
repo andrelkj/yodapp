@@ -1,34 +1,34 @@
-# Summary
-- [Summary](#summary)
-- [Notes](#notes)
-  - [Structure](#structure)
-  - [Toasters - dealing with toasters](#toasters---dealing-with-toasters)
-    - [Successful validation](#successful-validation)
-    - [Invalid email validation](#invalid-email-validation)
-  - [Locators - Finding elements](#locators---finding-elements)
-    - [AppActions - Changing elements](#appactions---changing-elements)
-    - [Super variables](#super-variables)
-  - [Hooks and Encapsulation](#hooks-and-encapsulation)
-  - [Tags](#tags)
-  - [base.robot](#baserobot)
-  - [register.robot](#registerrobot)
-  - [Datepicker](#datepicker)
-  - [Split Strings](#split-strings)
-  - [Organizing Robot files](#organizing-robot-files)
-  - [Radio button and Checkbox](#radio-button-and-checkbox)
-  - [Practicing](#practicing)
-  - [Keywords](#keywords)
-  - [Terminal commands](#terminal-commands)
-  - [Devtools regular expressions](#devtools-regular-expressions)
-  - [Important links](#important-links)
+# 1. Summary
+- [1. Summary](#1-summary)
+- [2. Notes](#2-notes)
+  - [2.1. Structure](#21-structure)
+  - [2.2. Toasters - dealing with toasters](#22-toasters---dealing-with-toasters)
+    - [2.2.1. Successful validation](#221-successful-validation)
+    - [2.2.2. Invalid email validation](#222-invalid-email-validation)
+  - [2.3. Locators - Finding elements](#23-locators---finding-elements)
+    - [2.3.1. AppActions - Changing elements](#231-appactions---changing-elements)
+    - [2.3.2. Super variables](#232-super-variables)
+  - [2.4. Hooks and Encapsulation](#24-hooks-and-encapsulation)
+  - [2.5. Tags](#25-tags)
+  - [2.6. base.robot](#26-baserobot)
+  - [2.7. register.robot](#27-registerrobot)
+  - [2.8. Datepicker](#28-datepicker)
+  - [2.9. Split Strings](#29-split-strings)
+  - [2.10. Organizing Robot files](#210-organizing-robot-files)
+  - [2.11. Radio button and Checkbox](#211-radio-button-and-checkbox)
+  - [2.12. Practicing](#212-practicing)
+  - [2.13. Keywords](#213-keywords)
+  - [2.14. Terminal commands](#214-terminal-commands)
+  - [2.15. Devtools regular expressions](#215-devtools-regular-expressions)
+  - [2.16. Important links](#216-important-links)
 
-# Notes
+# 2. Notes
 Automation testing with Robot Framework
 
 Robot Framework is an automation testing tool used to reduce manual repetitive testing.
 
 ---
-## Structure
+## 2.1. Structure
 
 To create a robot file you first need to create de file structure:
 
@@ -111,11 +111,11 @@ Following BDD techniques from Gherking all Test Cases we'll consider all those 3
 **OBS.:** Using only the text from the toaster as selector isn't the better option. To create a better selector follow the "dealing with toarters steps" down below.
 
 ---
-## Toasters - dealing with toasters
+## 2.2. Toasters - dealing with toasters
 
 Toasters are temporary messages displayed inside the page after an action or validation. As they're temporary it's hard to inspect them and sometimes it makes impossible to find those elements while running the application.
 
-### Successful validation
+### 2.2.1. Successful validation
 To deal with those elements use the following steps:
 1. Add a break/sleep while getting the html code used for this page and show this code;
 ```
@@ -136,7 +136,7 @@ Log         ${html}
 Wait For Elements State     css=.toast div >> text="Usuário cadastrado com sucesso!"    visible     5
 ```
 
-### Invalid email validation
+### 2.2.2. Invalid email validation
 Considering that the only change between the successful and failed validation is the displayed message from the toaster, we'll use the same elements, just copy and pasting from the successful validation scenario, and then change just the necessary elements.
 
 This is one way of doing it, but as the developer can change these elements in the future we'll need to change all those elements in order for the test case to work. One wai of improving it and also follow a best practice is to add encapsulation for those repeated elements.
@@ -144,7 +144,7 @@ This is one way of doing it, but as the developer can change these elements in t
 By using encapsulation it's possible to change all repeated elements all together with only one change.
 
 ---
-## Locators - Finding elements
+## 2.3. Locators - Finding elements
 
 Locators are used to find elements inside the page
 
@@ -165,7 +165,7 @@ css=.navbar-item >> text=Que a Força (qualidade) esteja com você!
 
 It is recommended to prioritize using CSS selector first and then using XPath only if there's no other option.
 
-### AppActions - Changing elements
+### 2.3.1. AppActions - Changing elements
 
 Elements properties can change frequently making old selectors invalid for new versions of the application. We can easily solve this by updating the selectors to more up to date properties, but it needs to be done individually for each of the old invalid elements and this can be impracticable for projects with hundreds of test cases that use those same elements.
 
@@ -208,7 +208,7 @@ Check Accept comunications
 ```
 **OBS.:** By doing this you'll only need to change the keyword variables and it'll be applied to all your test cases. This means that you can use the same code while changing the test mass by using defined variables.
 
-### Super variables
+### 2.3.2. Super variables
 
 Some keyworks used for encapsulation will need a lot of different arguments. For example:
 
@@ -252,7 +252,7 @@ Fill User Form
 ```
 
 ---
-## Hooks and Encapsulation
+## 2.4. Hooks and Encapsulation
 
 Personalised keywords can be defined inside robot to decrease repeated code
 
@@ -280,7 +280,7 @@ Test Teardown   End Session
 These keywords can be reused by putting it inside a new file that will contain only those global functions (in this case the file _base.robot_)
 
 ---
-## Tags
+## 2.5. Tags
 Tags are used in order to run specific tagged test cases by calling its defined tag. For example:
 ```
 *** Test Cases ***
@@ -296,7 +296,7 @@ Invalid Email
 The usage of tags is very important and useful for critical cases, smoke testing and regression. You can tag the critical test cases and then run these most important cases all together first.
 
 ---
-## base.robot
+## 2.6. base.robot
 
 Here we're going to define all primary characteristics, and then we're going to import those functions to all the other files and test cases. This is usefull to reduce repetitive elements.
 
@@ -326,7 +326,7 @@ Resource    base.robot
 ```
 
 ---
-## register.robot
+## 2.7. register.robot
 
 Everytime you change to a new page it's nice to define a checkpoint to make sure you're in the right path
 
@@ -368,7 +368,7 @@ text    Jedi
 **OBS.:** consider prioritizing the usage of value and text properties.
 
 ---
-## Datepicker
+## 2.8. Datepicker
 
 For the date picker we'll need four steps:
 
@@ -390,7 +390,7 @@ To start the Xpath first we use // and then the following path, for example:
 **OBS.:** (xpath)[1] is used to make the selector consider the first xpath found with those properties. This can be used to filter elements with the same name per order of apperance, starting with 1, 2, 3 and so on
 
 ---
-## Split Strings
+## 2.9. Split Strings
 
 Initially we defined a keyword to select the birth date inside the datepicker using 3 isolated arguments (month, year, and day). 
 ```
@@ -448,7 +448,7 @@ Select Birth Date
 If needed you can import the String library inside the base.robot file in order to use those functions.
 
 ---
-## Organizing Robot files
+## 2.10. Organizing Robot files
 
 Here we're organizing our files, separating them into resources (those containing configurational information - libs, keywords, ...) and tests (those containing our test cases and scenarios).
 
@@ -467,7 +467,7 @@ ${EXECDIR}/resources/base.robot
 **OBS.:** without using the Robot Framework Intellisense extension ${EXECDIR} argument don't work so we'll need to use another way to identify the path. For example, using the hole path: /Users/andre/Documents/QA Academy/Gravidade Zero/yodapp/resources/base.robot
 
 ---
-## Radio button and Checkbox
+## 2.11. Radio button and Checkbox
 
 While trying to select or find Radio button elements it's important to keep in mind if the button is visible or hidded. Some times this elements are set as hidden in order to apply style to it. 
 * For example:
@@ -494,7 +494,7 @@ Click    xpath=//input[@value="Cavaleiro Jedi"]/..//span[@class="check"]
 **OBS.:** note that you can use ../ to go up some layers inside parent elements and // to go down again.
 
 ---
-## Practicing
+## 2.12. Practicing
 
 Submitting register information.
 
@@ -516,7 +516,7 @@ css=button >> text="Cadastrar"
 This is a better option because it's format uses more properties, making the element search more specific.
 
 ---
-## Keywords
+## 2.13. Keywords
 
 * **_headless_** - receive <u>"true" or "false"</u> to show the page while running the test
 * **_slowMoo_** - receice a <u>time - hh:mm:ss</u> to slow down the run
@@ -538,14 +538,14 @@ This is a better option because it's format uses more properties, making the ele
 **OBS.:** using wait instead of sleep is the best practice once the element can be found before 5 seconds, giving you time gains in comparison with the sleep function.
 
 ---
-## Terminal commands
+## 2.14. Terminal commands
 
 * **_robot -d ./logs online.robot_** - will tell robot to run the described file and them save the retuned outputs inside a new directory, in this case named logs (./ is used to create the directory inside the actual directory - Yodapp)
 * **_robot -d ./logs -i inv_email register.robot_** - here we're informing robot that the tag inv_email is being included inside the running scenarios
 * **_robot -d ./logs -e happy register.robot** - here's the opposite of -i which means that the test cases tagged with happy must be excluded from the running scenarios
 
 ---
-## Devtools regular expressions
+## 2.15. Devtools regular expressions
 
 * **_.classname_** - search for a class
 * **_*_** - used while searching for elements to filter for all the elements that contains this variable instead of those exactly equal to it. 
@@ -555,7 +555,7 @@ This is a better option because it's format uses more properties, making the ele
 * **_^_** - filter for all elements that starts with the defined argument
 
 ---
-## Important links
+## 2.16. Important links
 
 * [Course pathway](https://app.qacademy.io/area/produto/item/148964)
 * [App used for testing](https://yodapp.vercel.app/)
