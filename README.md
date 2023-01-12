@@ -1,3 +1,25 @@
+- [Notes](#notes)
+  - [Structure](#structure)
+  - [Toasters - dealing with toasters](#toasters---dealing-with-toasters)
+    - [Successful validation](#successful-validation)
+    - [Invalid email validation](#invalid-email-validation)
+  - [Locators - Finding elements](#locators---finding-elements)
+    - [AppActions - Changing elements](#appactions---changing-elements)
+    - [Super variables](#super-variables)
+  - [Hooks and Encapsulation](#hooks-and-encapsulation)
+  - [Tags](#tags)
+  - [base.robot](#baserobot)
+  - [register.robot](#registerrobot)
+  - [Datepicker](#datepicker)
+  - [Split Strings](#split-strings)
+  - [Organizing Robot files](#organizing-robot-files)
+  - [Radio button and Checkbox](#radio-button-and-checkbox)
+  - [Practicing](#practicing)
+  - [Keywords](#keywords)
+  - [Terminal commands](#terminal-commands)
+  - [Devtools regular expressions](#devtools-regular-expressions)
+  - [Important links](#important-links)
+
 # Notes
 Automation testing with Robot Framework
 
