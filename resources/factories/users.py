@@ -14,7 +14,8 @@ def factory_yoda():
     }
 
     # returning variable user value
-    return  user
+    return user
+
 
 # Defining a method
 def factory_darth_vader():
@@ -29,4 +30,4 @@ def factory_darth_vader():
     }
 
     # returning variable user value
-    return  user
+    return user

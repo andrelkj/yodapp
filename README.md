@@ -2,6 +2,7 @@
 - [1. Summary](#1-summary)
 - [2. Notes](#2-notes)
   - [2.1. Structure](#21-structure)
+    - [Global variables (BEST PRACTICE)](#global-variables-best-practice)
   - [2.2. Toasters - dealing with toasters](#22-toasters---dealing-with-toasters)
     - [2.2.1. Successful validation](#221-successful-validation)
     - [2.2.2. Invalid email validation](#222-invalid-email-validation)
@@ -14,6 +15,7 @@
   - [2.5. Tags](#25-tags)
   - [2.6. base.robot](#26-baserobot)
   - [2.7. register.robot](#27-registerrobot)
+    - [Validating character creation](#validating-character-creation)
   - [2.8. Datepicker](#28-datepicker)
   - [2.9. Split Strings](#29-split-strings)
   - [2.10. Organizing Robot files](#210-organizing-robot-files)
@@ -31,7 +33,6 @@ Robot Framework is an automation testing tool used to reduce manual repetitive t
 
 ---
 ## 2.1. Structure
-
 To create a robot file you first need to create de file structure:
 
 * Here we enter all information needed to run the test;
@@ -112,9 +113,24 @@ Following BDD techniques from Gherking all Test Cases we'll consider all those 3
 
 **OBS.:** Using only the text from the toaster as selector isn't the better option. To create a better selector follow the "dealing with toarters steps" down below.
 
+### Global variables (BEST PRACTICE)
+Global variables are commonly written in caps lock in order to be easly tracked. For example:
+
+URL being defined as a global variable assuming name ${BASE_URL}
+```
+*** Keywords ***
+${BASE_URL}    https://yodapp-testing.vercel.app
+
+Start Session
+    New Browser    chromium       headless=False    slowMo=00:00:00 
+    New Page       ${BASE_URL}
+
+End Session
+    Take Screenshot
+```
+
 ---
 ## 2.2. Toasters - dealing with toasters
-
 Toasters are temporary messages displayed inside the page after an action or validation. As they're temporary it's hard to inspect them and sometimes it makes impossible to find those elements while running the application.
 
 ### 2.2.1. Successful validation
@@ -471,6 +487,38 @@ text    Jedi
 ```
 
 **OBS.:** consider prioritizing the usage of value and text properties.
+
+### Validating character creation
+In order to make sure that register is actually working we'll now define a new testing step to verify the character creation. To do this we'll need to:
+
+1. Return to the home page, where characters list is displayed;
+
+```
+    Go To    ${BASE_URL}
+
+    # Checkpoint (confirming that we're inside the home page)
+    Wait For Elements State    css=.carousel    visible    5
+```
+
+2. Validating character creation;
+
+```
+User Should Be Visible
+    [Arguments]    ${user}
+
+    Wait For Elements State    xpath=//td[contains(text(),"${user}[email]")]/..    visible    5
+```
+
+**OBS.:** Tables don't have any properties to work with so we need to work with the columns text as selectors.
+
+3. Adding a checkpoint to validade other informations for the created character.
+
+```
+    # Adding a checkpoint to validate other elements as well
+    Wait For Elements State    ${element}    visible     5
+    Get Text                   ${element}    contains    ${user}[name]
+    Get Text                   ${element}    contains    ${user}[instagram]
+```
 
 ---
 ## 2.8. Datepicker
