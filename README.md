@@ -1,3 +1,5 @@
+# Summary
+- [Summary](#summary)
 - [Notes](#notes)
   - [Structure](#structure)
   - [Toasters - dealing with toasters](#toasters---dealing-with-toasters)
