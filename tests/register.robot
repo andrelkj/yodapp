@@ -1,6 +1,8 @@
 *** Settings ***
 Documentation    Test suite for character creation
 
+Library     ${EXECDIR}/resources/factories/users.py
+
 Resource    ${EXECDIR}/resources/base.robot
 
 Test Setup       Start Session
@@ -11,13 +13,8 @@ Library          String
 Should register a new character
     [Tags]    happy
 
-    &{user}     Create Dictionary
-    ...         name=Mestre Yoda
-    ...         email=yoda@jedi.com
-    ...         ordem=Jedi
-    ...         tpjedi=Cavaleiro Jedi
-    ...         bdate=fevereiro-1970-20
-    ...         instagram=@yoda
+    # user here isn't a super variable anymore so we need to change the & to a $, once all test mass is now containing inside the keywork Factory Yoda which is now our new super variable
+    &{user}     Factory Yoda
 
     Go To User Form
     Fill User Form                ${user}
@@ -32,12 +29,8 @@ Should register a new character
 Invalid Email
     [Tags]    inv_email
 
-    &{user}     Create Dictionary
-    ...         name=Dath Vader
-    ...         email=vader&hotmail.com
-    ...         ordem=Sith
-    ...         bdate=dezembro-1980-15
-    ...         instagram=@vader
+    # user here isn't a super variable anymore so we need to change the & to a $, once all test mass is now containing inside the keywork Factory Darth Vader which is now our new super variable
+    ${user}     Factory Darth Vader
 
     Go To User Form
     Fill User Form                ${user}

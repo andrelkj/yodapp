@@ -6,9 +6,10 @@
     - [2.2.1. Successful validation](#221-successful-validation)
     - [2.2.2. Invalid email validation](#222-invalid-email-validation)
   - [2.3. Locators - Finding elements](#23-locators---finding-elements)
-    - [2.3.1. AppActions - Changing elements](#231-appactions---changing-elements)
-    - [2.3.2. Super variables](#232-super-variables)
-  - [2.4. Hooks and Encapsulation](#24-hooks-and-encapsulation)
+    - [2.3.1. AppActions - Changing elements (BEST PRACTICE)](#231-appactions---changing-elements-best-practice)
+    - [2.3.2. Super variables (BEST PRACTICE)](#232-super-variables-best-practice)
+    - [2.3.3. Externalizing dictionary](#233-externalizing-dictionary)
+  - [2.4. Hooks and Encapsulation (BEST PRACTICE)](#24-hooks-and-encapsulation-best-practice)
   - [2.5. Tags](#25-tags)
   - [2.6. base.robot](#26-baserobot)
   - [2.7. register.robot](#27-registerrobot)
@@ -165,7 +166,7 @@ css=.navbar-item >> text=Que a Força (qualidade) esteja com você!
 
 It is recommended to prioritize using CSS selector first and then using XPath only if there's no other option.
 
-### 2.3.1. AppActions - Changing elements
+### 2.3.1. AppActions - Changing elements (BEST PRACTICE)
 
 Elements properties can change frequently making old selectors invalid for new versions of the application. We can easily solve this by updating the selectors to more up to date properties, but it needs to be done individually for each of the old invalid elements and this can be impracticable for projects with hundreds of test cases that use those same elements.
 
@@ -208,11 +209,10 @@ Check Accept comunications
 ```
 **OBS.:** By doing this you'll only need to change the keyword variables and it'll be applied to all your test cases. This means that you can use the same code while changing the test mass by using defined variables.
 
-### 2.3.2. Super variables
-
+### 2.3.2. Super variables (BEST PRACTICE)
 Some keyworks used for encapsulation will need a lot of different arguments. For example:
 
-Filling forms with different informations
+Filling forms with different informations:
 ```
 Fill User Form                Mestre Yoda                         yoda@jedi.com    Jedi    fevereiro-1970-20    @yoda
 ```
@@ -251,8 +251,66 @@ Fill User Form
     Fill Text    css=input[name="email"]    ${user}[email]
 ```
 
+Here we've created our dictionary with all our testing data mass limited to only those expecific test cases where dictionary is inserted. There's a way of making it even better by externalizing all these testing data mass to other files as well.
+
+### 2.3.3. Externalizing dictionary
+To make it possible we'll use a external file following the steps:
+1. Create a new folder (factories) to store all our dictionaries;
+2. Create a new file that will contain our super variables and all testing data mass (users.py);
+3. Define a method with a variable that will contain all testing data mass inside and make the file return those values:
+
+```py
+# Defining a method
+def factory_yoda():
+
+    # putting all test data mass inside a variable
+    user = {
+        "name": "Mestre Yoda",
+        "email": "yoda@jedi.com",
+        "ordem": "Jedi",
+        "tpjedi": "Caveleiro Jedi",
+        "bdate": "fevereiro-1970-20",
+        "instagram": "@yoda"
+    }
+
+    # returning variable user value
+    return  user
+```
+
+4. Import this file as a library inside the test case file;
+5. Change the old dictionary
+
+```
+Should register a new character
+    [Tags]    happy
+
+    &{user}     Create Dictionary
+    ...         name=Mestre Yoda
+    ...         email=yoda@jedi.com
+    ...         ordem=Jedi
+    ...         tpjedi=Cavaleiro Jedi
+    ...         bdate=fevereiro-1970-20
+    ...         instagram=@yoda
+```
+
+For the new one (now coded in python)
+
+```
+Should register a new character
+    [Tags]    happy
+
+    &{user}     Factory Yoda
+```
+**OBS.:** Now all test data mass is integrated to an external file coded in python (users.py) and it's possible to call this new dictionary for whatever file and folder you want to as long as the lib where the information should come from is informed.
+
+```
+Library     ${EXECDIR}/resources/factories/user.py
+```
+
+6. We don't need to call the keywork Create a Dictionary inside robot so now we'll also need to change all our super variables "&(user)" for normal variables "$(user)".
+
 ---
-## 2.4. Hooks and Encapsulation
+## 2.4. Hooks and Encapsulation (BEST PRACTICE)
 
 Personalised keywords can be defined inside robot to decrease repeated code
 
