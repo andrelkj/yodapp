@@ -5,6 +5,7 @@
   - [2.2. Toasters - dealing with toasters](#22-toasters---dealing-with-toasters)
     - [2.2.1. Successful validation](#221-successful-validation)
     - [2.2.2. Invalid email validation](#222-invalid-email-validation)
+    - [2.2.3. Refactoring validation strategy](#223-refactoring-validation-strategy)
   - [2.3. Locators - Finding elements](#23-locators---finding-elements)
     - [2.3.1. AppActions - Changing elements (BEST PRACTICE)](#231-appactions---changing-elements-best-practice)
     - [2.3.2. Super variables (BEST PRACTICE)](#232-super-variables-best-practice)
@@ -143,6 +144,52 @@ Considering that the only change between the successful and failed validation is
 This is one way of doing it, but as the developer can change these elements in the future we'll need to change all those elements in order for the test case to work. One wai of improving it and also follow a best practice is to add encapsulation for those repeated elements.
 
 By using encapsulation it's possible to change all repeated elements all together with only one change.
+
+### 2.2.3. Refactoring validation strategy
+The way we're validating the toast now makes impossible to see the actual toast message because of the 5 seconds timeout. Considering that the toaster is displayed for less then 5 seconds it won't be showing when the print screen is taken if the test fails because of text discrepancies.
+
+![Failed toast message validation](Screenshots/fail-screenshot-1.png)
+
+A better way to validate this toaster is to:
+1. First find the toaster element
+
+```
+Wait For Elements State    css=.toast div    visible    5    
+```
+
+2. Validate the text by comparisson
+
+```
+Get Text                   css=.toast div    equal      ${expected_message}
+```
+
+Now we're doind two separate steps os validation:
+- first validating that the toaster is being displayed
+- then verifying if the displayed message is correct
+
+**OBS.:** It will still fail the test but now we can 1-see the toaster message in the print screen, and 2-get a more detailed error message making it easier to understand what is happening and how to fix.
+
+An extra step to make the code even better by defining a variable to englobe the repeated locators (css=.toast div):
+
+```
+Toaster Message Should Be
+    [Arguments]    ${expected_message}
+
+# Then I should see the success message
+    # Accessing html code source to create a proper locator for the toaster
+    # Sleep    1
+    # ${html}    Get Page Source
+    # Log    ${html}
+
+    ${element}  Set Variable    css=.toast div 
+
+    # Checkpoint (validating toaster)
+    Wait For Elements State    ${element}    visible    5                      
+    Get Text                   ${element}    equal      ${expected_message}
+```
+
+**IMPORTANT** 
+<p>*** Variables *** should only be used for global variables. In this case we're only using the Set Variable locally to one specific test case so we shouldn't use it inside the global variables!</p>
 
 ---
 ## 2.3. Locators - Finding elements

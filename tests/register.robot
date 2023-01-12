@@ -36,4 +36,4 @@ Invalid Email
     Fill User Form                ${user}
     Check Accept comunications
     Submit User Form
-    Toaster Message Should Be     Oops! O email é incorreto.
+    Toaster Message Should Be     Oops! O email é inválido.

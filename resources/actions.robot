@@ -28,7 +28,7 @@ Fill User Form
     Select Birth Date    ${user}[bdate]
 
     # Filling in the input fields, moved down here to follow the fields entering order
-    Fill Text    id=insta    ${user}[instagram]   
+    Fill Text    id=insta    ${user}[instagram]    
 
 # Selecting radio buttons dinamically
 Select Jedi
@@ -72,9 +72,11 @@ Toaster Message Should Be
     # ${html}    Get Page Source
     # Log    ${html}
 
+    ${element}  Set Variable    css=.toast div 
+
     # Checkpoint (validating toaster)
-    Wait For Elements State    css=.toast div >> text=${expected_message}    
-    ...                        visible                                       5    
+    Wait For Elements State    ${element}    visible    5                      
+    Get Text                   ${element}    equal      ${expected_message}
 
 
 
