@@ -2,7 +2,7 @@
 - [1. Summary](#1-summary)
 - [2. Notes](#2-notes)
   - [2.1. Structure](#21-structure)
-    - [Global variables (BEST PRACTICE)](#global-variables-best-practice)
+    - [2.1.1. Global variables (BEST PRACTICE)](#211-global-variables-best-practice)
   - [2.2. Toasters - dealing with toasters](#22-toasters---dealing-with-toasters)
     - [2.2.1. Successful validation](#221-successful-validation)
     - [2.2.2. Invalid email validation](#222-invalid-email-validation)
@@ -15,19 +15,20 @@
   - [2.5. Tags](#25-tags)
   - [2.6. base.robot](#26-baserobot)
   - [2.7. register.robot](#27-registerrobot)
-    - [Validating character creation](#validating-character-creation)
+    - [2.7.1. Validating character creation](#271-validating-character-creation)
   - [2.8. Datepicker](#28-datepicker)
   - [2.9. Split Strings](#29-split-strings)
   - [2.10. Organizing Robot files](#210-organizing-robot-files)
   - [2.11. Radio button and Checkbox](#211-radio-button-and-checkbox)
-  - [2.12. Practicing](#212-practicing)
-  - [Deploying App to CLoud](#deploying-app-to-cloud)
-  - [2.13. Keywords](#213-keywords)
-  - [2.14. Terminal commands](#214-terminal-commands)
-  - [2.15. Devtools regular expressions](#215-devtools-regular-expressions)
-  - [Fly Cloud commands](#fly-cloud-commands)
-  - [2.16. Important links](#216-important-links)
+- [3. Practicing](#3-practicing)
+- [4. Deploying App to CLoud](#4-deploying-app-to-cloud)
+- [5. Keywords](#5-keywords)
+- [6. Terminal commands](#6-terminal-commands)
+- [7. Devtools regular expressions](#7-devtools-regular-expressions)
+- [8. Fly Cloud commands](#8-fly-cloud-commands)
+- [9. Important links](#9-important-links)
 
+---
 # 2. Notes
 Automation testing with Robot Framework
 
@@ -115,7 +116,7 @@ Following BDD techniques from Gherking all Test Cases we'll consider all those 3
 
 **OBS.:** Using only the text from the toaster as selector isn't the better option. To create a better selector follow the "dealing with toarters steps" down below.
 
-### Global variables (BEST PRACTICE)
+### 2.1.1. Global variables (BEST PRACTICE)
 Global variables are commonly written in caps lock in order to be easly tracked. For example:
 
 URL being defined as a global variable assuming name ${BASE_URL}
@@ -490,7 +491,7 @@ text    Jedi
 
 **OBS.:** consider prioritizing the usage of value and text properties.
 
-### Validating character creation
+### 2.7.1. Validating character creation
 In order to make sure that register is actually working we'll now define a new testing step to verify the character creation. To do this we'll need to:
 
 1. Return to the home page, where characters list is displayed;
@@ -649,7 +650,7 @@ Click    xpath=//input[@value="Cavaleiro Jedi"]/..//span[@class="check"]
 **OBS.:** note that you can use ../ to go up some layers inside parent elements and // to go down again.
 
 ---
-## 2.12. Practicing
+# 3. Practicing
 
 Submitting register information.
 
@@ -671,14 +672,14 @@ css=button >> text="Cadastrar"
 This is a better option because it's format uses more properties, making the element search more specific.
 
 ---
-## Deploying App to CLoud
+# 4. Deploying App to CLoud
 
 Heroku was being used to deploy our app servers, but now we're moving to a free version substitute called Fly that we'll do the same.
 
 Fly Cloud works through code lines only inside Power Shell (on Windows). Terminal will work for macOS.
 
 ---
-## 2.13. Keywords
+# 5. Keywords
 
 * **_headless_** - receive <u>"true" or "false"</u> to show the page while running the test
 * **_slowMoo_** - receice a <u>time - hh:mm:ss</u> to slow down the run
@@ -700,14 +701,14 @@ Fly Cloud works through code lines only inside Power Shell (on Windows). Termina
 **OBS.:** using wait instead of sleep is the best practice once the element can be found before 5 seconds, giving you time gains in comparison with the sleep function.
 
 ---
-## 2.14. Terminal commands
+# 6. Terminal commands
 
 * **_robot -d ./logs online.robot_** - will tell robot to run the described file and them save the retuned outputs inside a new directory, in this case named logs (./ is used to create the directory inside the actual directory - Yodapp)
 * **_robot -d ./logs -i inv_email register.robot_** - here we're informing robot that the tag inv_email is being included inside the running scenarios
 * **_robot -d ./logs -e happy register.robot** - here's the opposite of -i which means that the test cases tagged with happy must be excluded from the running scenarios
 
 ---
-## 2.15. Devtools regular expressions
+# 7. Devtools regular expressions
 
 * **_.classname_** - search for a class
 * **_*_** - used while searching for elements to filter for all the elements that contains this variable instead of those exactly equal to it. 
@@ -717,14 +718,16 @@ Fly Cloud works through code lines only inside Power Shell (on Windows). Termina
 * **_^_** - filter for all elements that starts with the defined argument
 
 --- 
-##  Fly Cloud commands
+#  8. Fly Cloud commands
 * **_flyctl_** - this is the standard command to call the fly
 
 ---
-## 2.16. Important links
+# 9. Important links
 
 * [Course pathway](https://app.qacademy.io/area/produto/item/148964)
 * [App used for testing](https://yodapp.vercel.app/)
 * [Xpath cheatsheed](https://devhints.io/xpath)
 * [Robot Browser Library Guide](https://marketsquare.github.io/robotframework-browser/Browser.html?_gl%3D1%2A15e6l3s%2A_ga%2AMTU1ODkzMjgxMi4xNjcyNzE4Njcy%2A_ga_37GXT4VGQK%2AMTY3MjkzODQyOC41LjEuMTY3MjkzODQ4Ni4wLjAuMA..)
 * [Deploy App Servers to Cloud](https://fly.io)
+* [QA academy Fly publishing package](https://github.com/weareqacademy/gz-apps) 
+<!-- OBS.: no more ambient updating is needed from here -->
