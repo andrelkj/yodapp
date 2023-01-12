@@ -312,7 +312,7 @@ Library     ${EXECDIR}/resources/factories/user.py
 ---
 ## 2.4. Hooks and Encapsulation (BEST PRACTICE)
 
-Personalised keywords can be defined inside robot to decrease repeated code
+Personalized keywords can be defined inside robot to decrease repeated code
 
 To use this function first you need to create the keywords:
 
