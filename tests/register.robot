@@ -11,9 +11,17 @@ Library          String
 Should register a new character
     [Tags]    happy
 
+    &{user}     Create Dictionary
+    ...         name=Mestre Yoda
+    ...         email=yoda@jedi.com
+    ...         ordem=Jedi
+    ...         tpjedi=Cavaleiro Jedi
+    ...         bdate=fevereiro-1970-20
+    ...         instagram=@yoda
+
     Go To User Form
-    Fill User Form                Mestre Yoda                         yoda@jedi.com    Jedi    fevereiro-1970-20    @yoda
-    Select Jedi                   Cavaleiro Jedi
+    Fill User Form                ${user}
+    Select Jedi                   ${user}[tpjedi]
     Check Accept comunications
     Submit User Form
     Toaster Message Should Be     Usuário Cadastrado com sucesso! 
@@ -24,8 +32,15 @@ Should register a new character
 Invalid Email
     [Tags]    inv_email
 
+    &{user}     Create Dictionary
+    ...         name=Dath Vader
+    ...         email=vader&hotmail.com
+    ...         ordem=Sith
+    ...         bdate=dezembro-1980-15
+    ...         instagram=@vader
+
     Go To User Form
-    Fill User Form                Darth Vader                   vader&hotmail.com    Sith    dezembro-1980-15    @vader
+    Fill User Form                ${user}
     Check Accept comunications
     Submit User Form
     Toaster Message Should Be     Oops! O email é incorreto.

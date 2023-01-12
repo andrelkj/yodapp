@@ -14,21 +14,21 @@ Go To User Form
 
 # Filling user forms dinamically
 Fill User Form
-    [Arguments]    ${name}    ${email}    ${ordem}    ${bdate}    ${instagram}
+    [Arguments]    ${user}
 
 # When filling in those forms with Master Yoda's data
     # Filling in the input fields
-    Fill Text    css=input[name="nome"]     ${name}
-    Fill Text    css=input[name="email"]    ${email}
+    Fill Text    css=input[name="nome"]     ${user}[name]
+    Fill Text    css=input[name="email"]    ${user}[email]
 
     # Entering a option in the selection field
-    Select Options By    css=.ordem select    text    ${ordem} 
+    Select Options By    css=.ordem select    text    ${user}[ordem]
 
     # Entering datepicker information
-    Select Birth Date    ${bdate} 
+    Select Birth Date    ${user}[bdate]
 
     # Filling in the input fields, moved down here to follow the fields entering order
-    Fill Text    id=insta    ${instagram}    
+    Fill Text    id=insta    ${user}[instagram]   
 
 # Selecting radio buttons dinamically
 Select Jedi

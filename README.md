@@ -184,6 +184,49 @@ Check Accept comunications
 ```
 **OBS.:** By doing this you'll only need to change the keyword variables and it'll be applied to all your test cases. This means that you can use the same code while changing the test mass by using defined variables.
 
+### Super variables
+
+Some keyworks used for encapsulation will need a lot of different arguments. For example:
+
+Filling forms with different informations
+```
+Fill User Form                Mestre Yoda                         yoda@jedi.com    Jedi    fevereiro-1970-20    @yoda
+```
+
+One way to deal with this is by using a super variable:
+1. First we'll create a dictionary that will contain all our data mass, setting all our arguments inside of it.
+
+```
+&{user}     Create Dictionary
+...         name=Mestre Yoda
+...         email=yoda@jedi.com
+...         ordem=Jedi
+...         tpjedi=Cavaleiro Jedi
+...         bdate=fevereiro-1970-20
+...         instagram=@yoda
+```
+**OBS.:** This dictionary can assume all kinds of values even lists can be defined here. Note that you need to use "&" in order for robot to understand that this is going to be a dictionary.
+
+2. Change all the arguments for the defined (Super variable) name - &{user}
+
+```
+Fill User Form                ${user}
+```
+**OBS.:** Here we're now going to use "$" to define user as a variable.
+
+3. Change your actions arguments is needed as well. Here we'll also need to take an addional step informing the dictionary and the desired value as well. For example:
+
+```
+# Filling user forms dinamically
+Fill User Form
+    [Arguments]    ${user}
+
+# When filling in those forms with Master Yoda's data
+    # Filling in the input fields
+    Fill Text    css=input[name="nome"]     ${user}[name]
+    Fill Text    css=input[name="email"]    ${user}[email]
+```
+
 ---
 ## Hooks and Encapsulation
 
@@ -211,7 +254,6 @@ Test Teardown   End Session
 ```
 
 These keywords can be reused by putting it inside a new file that will contain only those global functions (in this case the file _base.robot_)
-
 
 ---
 ## Tags
