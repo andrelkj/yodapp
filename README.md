@@ -21,9 +21,11 @@
   - [2.10. Organizing Robot files](#210-organizing-robot-files)
   - [2.11. Radio button and Checkbox](#211-radio-button-and-checkbox)
   - [2.12. Practicing](#212-practicing)
+  - [Deploying App to CLoud](#deploying-app-to-cloud)
   - [2.13. Keywords](#213-keywords)
   - [2.14. Terminal commands](#214-terminal-commands)
   - [2.15. Devtools regular expressions](#215-devtools-regular-expressions)
+  - [Fly Cloud commands](#fly-cloud-commands)
   - [2.16. Important links](#216-important-links)
 
 # 2. Notes
@@ -669,6 +671,13 @@ css=button >> text="Cadastrar"
 This is a better option because it's format uses more properties, making the element search more specific.
 
 ---
+## Deploying App to CLoud
+
+Heroku was being used to deploy our app servers, but now we're moving to a free version substitute called Fly that we'll do the same.
+
+Fly Cloud works through code lines only inside Power Shell (on Windows). Terminal will work for macOS.
+
+---
 ## 2.13. Keywords
 
 * **_headless_** - receive <u>"true" or "false"</u> to show the page while running the test
@@ -707,6 +716,10 @@ This is a better option because it's format uses more properties, making the ele
     - a[href*=new] - here we'll look for a element 'a' with a 'href' that contains the argument 'new' inside of it
 * **_^_** - filter for all elements that starts with the defined argument
 
+--- 
+##  Fly Cloud commands
+* **_flyctl_** - this is the standard command to call the fly
+
 ---
 ## 2.16. Important links
 
@@ -714,3 +727,4 @@ This is a better option because it's format uses more properties, making the ele
 * [App used for testing](https://yodapp.vercel.app/)
 * [Xpath cheatsheed](https://devhints.io/xpath)
 * [Robot Browser Library Guide](https://marketsquare.github.io/robotframework-browser/Browser.html?_gl%3D1%2A15e6l3s%2A_ga%2AMTU1ODkzMjgxMi4xNjcyNzE4Njcy%2A_ga_37GXT4VGQK%2AMTY3MjkzODQyOC41LjEuMTY3MjkzODQ4Ni4wLjAuMA..)
+* [Deploy App Servers to Cloud](https://fly.io)
